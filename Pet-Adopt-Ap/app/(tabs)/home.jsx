@@ -1,4 +1,4 @@
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native'
 import React from 'react'
 import Header from '../../components/Home/Header'
 import Slider from '../../components/Home/Slider'
@@ -12,6 +12,7 @@ export default function Home() {
       padding:20,
       marginTop:20,
     }}>
+      <ScrollView showsVerticalScrollIndicator={false}>
       {/* Header */}
       <Header></Header>
       {/* Slider */}
@@ -29,6 +30,7 @@ export default function Home() {
           fontSize: 18,
         }}>Add new pet</Text>
       </TouchableOpacity>
+      </ScrollView>
     </View>
   )
 }
