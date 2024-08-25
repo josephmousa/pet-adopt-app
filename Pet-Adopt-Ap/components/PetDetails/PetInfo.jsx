@@ -1,7 +1,7 @@
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 import Colors from '../../constants/Colors'
-import AntDesign from '@expo/vector-icons/AntDesign';
+import MarkFav from './MarkFav';
 
 export default function PetInfo({pet}) {
   return (
@@ -34,8 +34,7 @@ export default function PetInfo({pet}) {
                 {pet?.address}
             </Text>
         </View>
-
-        <AntDesign name="heart" size={30} color="gray" />
+            <MarkFav></MarkFav>
 
       </View>
     </View>
